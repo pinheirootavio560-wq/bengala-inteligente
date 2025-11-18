@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apresentação: Bengala Inteligente com Arduino para Deficientes Visuais</title>
     <style>
-        /* Estilos CSS Incorporados */
+        /* ... (O CSS completo anterior foi mantido para brevidade) ... */
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -32,7 +32,7 @@
             padding: 20px 0;
             text-align: center;
             border-radius: 10px 10px 0 0;
-            margin: -30px -30px 30px -30px; /* Ajusta para preencher o topo do container */
+            margin: -30px -30px 30px -30px; 
         }
 
         header h1 {
@@ -67,6 +67,27 @@
             padding: 10px;
             border-left: 5px solid #007bff;
             border-radius: 5px;
+        }
+
+        /* Estilos para as imagens */
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container figcaption {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+            font-size: 0.9em;
         }
 
         /* Estilo da Proposta de Valor (Convencimento) */
@@ -138,11 +159,51 @@
             <h2>💡 Nossa Solução: A Bengala Inteligente</h2>
             <p>Desenvolvemos uma bengala que integra a simplicidade da ferramenta tradicional com a inteligência da tecnologia. Utilizando o **Arduino** como cérebro, nosso protótipo adiciona:</p>
             <ul>
-                <li>**Sensores Ultrassônicos:** Detectam obstáculos aéreos (galhos, placas, portas) e à frente, a até 2 metros de distância.</li>
+                <li>**Sensores Ultrassônicos:** Detectam obstáculos a partir de 20cm de distância e envia os dados ao ardoíno.</li>
                 <li>**Feedback Vibratório:** Alerta o usuário através de vibrações no punho, permitindo uma reação rápida e discreta.</li>
                 <li>**Design Ergonômico:** Manutenção do formato familiar para garantir conforto e fácil adaptação.</li>
             </ul>
+
+            <div class="image-container">
+                <figure>
+                    <img src="WhatsApp Image 2025-11-18 at 02.39.47.jpeg" alt="Bengala eletrônica para deficientes visuais completa com sensores Arduino.">
+                    <figcaption>Figura 1: Visão geral da bengala inteligente com o módulo Arduino e sensores integrados.</figcaption>
+                </figure>
+            </div>
         </section>
+
+        <section class="section-content">
+            <h2>🔍 Detalhes do Hardware</h2>
+            <p>Para o funcionamento da bengala, foram utilizados componentes de fácil acesso e programação:</p>
+            <ul>
+                <li>Placa Arduino Uno R3</li>
+                <li>Módulo Ultrassônico</li>
+                <li>Buzzer passivo</li>
+                <li>Motor de vibração Vibracall, Pilha 9v, Transitor, Resistor, Cabos jumper, Bengala dobravel</li>
+               
+            </ul>
+            <p>A montagem foi pensada para ser compacta e resistente ao uso diário.</p>
+
+            <div class="image-container">
+                <figure>
+                    <img src="WhatsApp Image 2025-11-18 at 02.39.42.jpeg" alt="Detalhe dos componentes eletrônicos da bengala: Arduino, sensores ultrassônicos.">
+                    <figcaption>Figura 2: Close-up dos componentes eletrônicos (Arduino e sensores) acoplados à bengala.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="section-content">
+            <h2>🔌 Funcionamento do Circuito</h2>
+            <p>O circuito é relativamente simples, conectando o sensor ultrassônico ao Arduino para medir distâncias. Um motor de vibração é acionado quando um obstáculo é detectado dentro de uma distância pré-definida, fornecendo um feedback tátil ao usuário.</p>
+
+            <div class="image-container">
+                <figure>
+                    <img src="WhatsApp Image 2025-11-18 at 02.39.41.jpeg" alt="Diagrama de circuito eletrônico do projeto da bengala, mostrando Arduino, sensor e vibração.">
+                    <figcaption>Figura 3: Diagrama do circuito eletrônico do projeto, demonstrando a conexão do Arduino com o sensor ultrassônico e o feedback de vibração.</figcaption>
+                </figure>
+            </div>
+        </section>
+
 
         <section class="convincing-proposal">
             <h2>🤝 Por Que Apoiamos a Bengala Inteligente? (A Proposta de Valor)</h2>
